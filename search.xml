@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>MacOS终端中隐藏用户名及计算机名信息</title>
+      <link href="/2023/03/15/MacOS%E9%9A%90%E8%97%8F%E7%94%A8%E6%88%B7%E5%90%8D%E5%8F%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/"/>
+      <url>/2023/03/15/MacOS%E9%9A%90%E8%97%8F%E7%94%A8%E6%88%B7%E5%90%8D%E5%8F%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/</url>
+      
+        <content type="html"><![CDATA[<p>目前最新的MacOS，默认的终端使用的是zsh，打开终端，默认显示了用户名@计算机名 当前目录$，默认配置如下：</p><pre class="line-numbers language-zsh" data-language="zsh"><code class="language-zsh">export PS1="%n@%m %1~ %# "<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>通过在/Users/用户名/.zshrc增加以下语句，保存。</p><pre class="line-numbers language-zsh" data-language="zsh"><code class="language-zsh">export PS1="%%1~ %# "<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果没有/Users/用户名/.zshrc文件，需要新建。</p><pre class="line-numbers language-zsh" data-language="zsh"><code class="language-zsh">cd ~vi .zshrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>执行source /Users/用户名/.zshrc使其生效。</p><pre class="line-numbers language-zsh" data-language="zsh"><code class="language-zsh">source /Users/用户名/.zshrc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MacOS </tag>
+            
+            <tag> zsh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2023/03/12/hello-world/"/>
       <url>/2023/03/12/hello-world/</url>
